@@ -6,7 +6,7 @@ This is JSON-RPC API server with Ruby on Rails4.
 
 Send post request like following.
 
-```
+```ruby
 require 'net/http'
 require 'uri'
 require 'json'
