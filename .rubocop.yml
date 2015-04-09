@@ -1,0 +1,17 @@
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+
+Documentation:
+  Enabled: false
+
+ClassAndModuleChildren:
+  Enabled: false
+
+LineLength:
+  Max: 120
+
+# don't know how to fix...
+RaiseArgs:
+  Enabled: false
