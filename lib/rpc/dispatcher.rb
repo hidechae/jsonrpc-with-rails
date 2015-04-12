@@ -1,9 +1,9 @@
 class Rpc::Dispatcher
   def initialize(request)
-    @id      = request.delete(:id)
-    @jsonrpc = request.delete(:jsonrpc)
-    @method  = request.delete(:method)
-    @params  = request.delete(:params)
+    @id      = request.try(:id)
+    @jsonrpc = request.try(:jsonrpc)
+    @method  = request.try(:method)
+    @params  = request.try(:params)
     @result  = {}
     @error   = 0
   end
